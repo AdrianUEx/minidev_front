@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+:root {
+    --tam_fuente: 16px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    --color-fondo: white;
+    --color-fondo-principal: seashell;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.underHeader {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    height: 100%; /*viewport height*/
+    
+}
+
+aside {
+    border-right: 1px solid rgb(224, 221, 221);
+    box-shadow: 2px 0px 1px 1px rgb(224, 221, 221);
+}
+
+
+aside > span:hover {
+    background-color: aqua;
+}
+
+.dashboard {
+    margin: 0 0 0 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+form>input, 
+form>textarea {
+    margin: 1px;
+    width: 100%;
+    border-radius: 32px;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+ 
+}
+
+form>button {
+    border-radius: 32px;
+    outline: none;
+    width: fit-content;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    border-color: blue;
+
+    margin: 2px;
+
+}
+
+form>button:hover {
+    background-color: darkblue;
+}
+
+
+
+
+.scrollbar-fina::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar-fina::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar-fina::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    /* gray-300 */
+    border-radius: 3px;
+}
+
+.scrollbar-fina::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+    /* gray-400 */
+}
