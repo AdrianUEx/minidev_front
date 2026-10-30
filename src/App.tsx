@@ -3,7 +3,7 @@ import './App.css'
 
 
 
-// * application entrypoint
+// * application entrypoint, known as the root component of the application. It is the root as it is rendered the first, due to main.tsx being the entrypoint of a React's architecture from the index.html
 export function App() {
 
   return (
